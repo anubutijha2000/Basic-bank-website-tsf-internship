@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bank{
+    width: 120px;
+    height:115px;
+    
+    
+}
+.navbar {
+    overflow: hidden;
+    align-items: center;
+    background-color:rgb(174, 174, 219);
+     /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height:40%
+
+    }
+  
+  /* Links inside the navbar */
+  .navbar a {
+      
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+
+
+.background{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:100% ;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    left: 0;
+    
+}
+
+
+.top{
+    background-color: rgb(225, 236, 236);
+    width: auto;
+    height: 200px;
+  }
+h1{
+    top: 80px;
+    text-align: center;
+  }
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button1{background-color: antiquewhite;}
+  .button2{background-color: rgb(148, 177, 199);}
+  .customer{
+      background-size: auto;
+      background-position: unset;
+      margin-top: -1000000000000000000000000000000000000000000000000000000000000000000000px;
+    
+ }
+  .transaction img{
+    background-size: auto;
+    background-position: unset;
+    height: 100px;
+    margin-top: -100000000000000000000000000000000000000000000000000000000000000000000000px;
+
+  }
+  
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+
+  .avtar {
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    
+  }
+  
+  
+
+
+ 
+  

@@ -1,0 +1,78 @@
+<script src="table.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form details</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  
+
+
+<div class="container">
+<form>
+
+    <label for="Sender">From:</label><br>
+    <input type="text" id="From" name="From"><br>
+    <label for="Receiver">To:</label><br>
+    <input type="text" id="To" name="To">
+    <label for="Amount">Amount:</label><br>
+    <input type="number" id="Amount" name="Amount">
+  </fieldset> 
+  </form>
+  <button class="button button 2" onclick="sendMoney();">Transfer</button>
+</div>
+<script>
+
+  function sendMoney(){
+    alert('Amount is being transferred');
+    var s_name = document.getElementById("From").value;
+    console.log(s_name);
+    var r_name = document.getElementById("To").value;
+    console.log(r_name);
+    var bal = document.getElementById("Amount").value;
+    console.log(bal);
+    for (var i =0;i<10;++i){
+      if(udetail[i].name==s_name){
+        
+        if(udetail[i].amount<bal){
+          
+          alert('Insufficient Balance');
+        }
+        else{
+          udetail[i].amount= udetail[i].amount-bal; 
+        }
+        }
+      if(udetail[i].name==r_name){
+        
+            udetail[i].amount=parseInt(bal)+parseInt(udetail[i].amount); 
+          
+          }
+    }
+    
+       // window.location.href = "http://127.0.0.1:5500/redirected.html";
+       for (var i =0;i<10;++i){
+         alert('Updated transaction history is as follows:')
+         if(udetail[i].name == s_name)
+            var myWindow = window.open("", "Transaction History", "width=200,height=100");
+            myWindow.document.write(udetail[i].name, udetail[i].amount);
+       }
+       for (var i =0;i<10;++i){
+          if(udetail[i].name == r_name)
+            var myWindow = window.open("", "Transaction History", "width=200,height=100");
+            myWindow.document.write(udetail[i].name, udetail[i].amount);
+            
+            
+       
+        
+      }
+    }
+</script>
+</body>
+</html>
